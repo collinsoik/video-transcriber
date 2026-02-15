@@ -1,0 +1,28 @@
+# Audio intermediates
+*.wav
+
+# Video files
+*.mp4
+*.mkv
+*.avi
+*.mov
+*.m4a
+*.webm
+
+# Output
+output/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+venv/
+.venv/
+*.egg-info/
+
+# Environment / secrets
+.env
+
+# OS
+.DS_Store
+Thumbs.db
