@@ -1,6 +1,6 @@
 # Video Transcriber
 
-A minimal command-line tool that extracts transcripts from video files using
+A minimal command-line tool that extracts transcripts from any video file using
 [Fireworks AI's Whisper-v3 API](https://fireworks.ai).
 
 ## How It Works
@@ -42,13 +42,13 @@ export FIREWORKS_API_KEY="your-api-key-here"
 
 ```bash
 # Basic usage - saves transcript JSON next to the video
-python transcribe.py path/to/lecture.mp4
+python transcribe.py path/to/video.mp4
 
 # Specify output path
-python transcribe.py lecture.mp4 -o my_transcript.json
+python transcribe.py video.mp4 -o my_transcript.json
 
 # Keep the extracted audio file
-python transcribe.py lecture.mp4 --keep-audio
+python transcribe.py video.mp4 --keep-audio
 ```
 
 ## Output
@@ -59,14 +59,14 @@ The tool produces two outputs:
 
 ```json
 {
-  "audio_file": "lecture.wav",
+  "audio_file": "video.wav",
   "language": "en",
   "duration": 4738.45,
   "segments": [
     {
       "start": 2.52,
       "end": 25.26,
-      "text": "Welcome to today's lecture..."
+      "text": "Welcome everyone..."
     }
   ]
 }
@@ -81,7 +81,7 @@ Duration: 1h18m58s  |  Language: en
 Segments: 412
 ============================================================
 
-[0m02s -> 0m25s]  Welcome to today's lecture...
+[0m02s -> 0m25s]  Welcome everyone...
 [0m30s -> 0m59s]  Today we will cover...
 
 ============================================================

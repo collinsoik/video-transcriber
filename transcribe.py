@@ -4,8 +4,8 @@ Video Transcriber - Extract transcripts from video files using Fireworks AI Whis
 
 Usage:
     export FIREWORKS_API_KEY="your-key"
-    python transcribe.py lecture.mp4
-    python transcribe.py lecture.mp4 --output transcript.json
+    python transcribe.py video.mp4
+    python transcribe.py video.mp4 --output transcript.json
 """
 
 import argparse
